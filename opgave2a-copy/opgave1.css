@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+article {
+  border: 1px solid #333;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+footer {
+  text-align: center;
+}
+
+header,
+footer {
+  padding: 10px 0;
+}
