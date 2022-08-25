@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01-objekt</title>
+  </head>
+  <body>
+    <article id="dyr">
+      <h3></h3>
+      <img src="" alt="" />
+      <p></p>
+      <p></p>
+    </article>
+    <section id="liste"></section>
+    <script>
+      //document.addEventListener("DOMContentLoaded", start);
+
+      let dyr = [
+        { navn: "Gris", type: "Pattedyr", billede: "http://mabe-kea.dk/E19/pics/pig.png", levested: "Svinefarm" },
+        { navn: "Frø", type: "Amfibie", levested: "vandhul", billede: "http://mabe-kea.dk/E19/pics/frog.png" },
+        { navn: "Ræv", type: "Pattedyr", billede: "http://mabe-kea.dk/E19/pics/fox.png", levested: "Skoven" },
+        { navn: "Sild", type: "Fisk", billede: "http://mabe-kea.dk/E19/pics/sild.jpg", levested: "Havet" },
+        { navn: "Krokodille", type: "Krybdyr", billede: "http://mabe-kea.dk/E19/pics/kroko.jpg", levested: "Floden" },
+      ];
+
+      console.log(`navn:${dyr[0].navn} type:${dyr[0].type} billede:${dyr[0].billede} levested:${dyr[0].levested}`);
+      console.log(`navn:${dyr[1].navn} type:${dyr[1].type} billede:${dyr[1].billede} levested:${dyr[1].levested}`);
+      console.log(`navn:${dyr[2].navn} type:${dyr[2].type} billede:${dyr[2].billede} levested:${dyr[2].levested}`);
+      console.log(`navn:${dyr[3].navn} type:${dyr[3].type} billede:${dyr[3].billede} levested:${dyr[3].levested}`);
+      console.log(`navn:${dyr[4].navn} type:${dyr[4].type} billede:${dyr[4].billede} levested:${dyr[4].levested}`);
+
+      // function start() {
+      //console.log("loaded");
+      //const listevisning = document.querySelector("#liste");
+      //dyr.forEach((dyr) => {
+      //listevisning.innerHTML += `<p>${dyr.navn}, ${dyr.type} fra ${dyr.levested}</p>`;
+      // });
+      // }
+      //const destination = document.querySelector("#dyr");
+      //const overskrift = `${dyr.navn}`;
+
+      //destination.querySelector("h3").textContent = overskrift;
+      //destination.querySelector("p").textContent = `type: ${dyr.type}`;
+      //destination.querySelector("p+p").textContent = `levested: ${dyr.levested}`;
+      //destination.querySelector("img").src = dyr.billede;
+    </script>
+  </body>
+</html>
