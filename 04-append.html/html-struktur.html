@@ -16,12 +16,12 @@
     </main>
     <section>
       <article>
-        <img src="https://placeimg.com/640/480/any" />
+        <img src="https://placeimg.com/640/480/any" alt="" class="first" />
         <h3>Article 1</h3>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
       </article>
       <article>
-        <img src="https://placeimg.com/640/480/any" />
+        <img src="https://placeimg.com/640/480/any" alt="" class="second" />
         <h3>Article 2</h3>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
       </article>
@@ -65,6 +65,7 @@
       brødtekst2.textContent;
       console.log(brødtekst2.textContent);
 
+      //opgave3
       const pic1 = document.querySelector("article:nth-child(1) img");
       console.log(pic1);
       pic1.src = "billede.jpg";
@@ -74,6 +75,23 @@
       console.log(pic2);
       pic2.src = "billede2.jpg";
       pic2.alt = "Tvilling stjernetegn";
+
+      // opgave 4:
+
+      let mainSection = document.querySelector("section");
+
+      //laver et artikel tag
+      let newArticle = document.createElement("article");
+      //laver en overskrift
+      let overskrift = document.createElement("h3");
+      //laver tekst til overskriften
+      let overskriftText = document.createTextNode("Article 3");
+      //tilføjer teksten til den overskrift jeg har lavet
+      overskrift.appendChild("overskriftText");
+      //tilføjer overskriften til min articel
+      newArticle.appendChild(overskrift);
+      //tilføjer artiklen til section
+      mainSection.appendChild(newArticle);
     </script>
   </body>
 </html>
